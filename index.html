@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do Campo à Mesa: A Jornada do Morango</title>
-      <link rel="icon" href="morango.png">
+    <title>Do Plantio à Colheita: O Cultivo do Tomate</title>
+    <link rel="icon" href="tomate.png">
     <style>
         * {
             box-sizing: border-box;
@@ -12,7 +12,7 @@
         }
         
         body {
-            background-color: #fce4ec;
+            background-color: #fff3e0;
             margin: 0;
             padding: 0;
             color: #333;
@@ -26,7 +26,7 @@
         }
         
         header {
-            background-color: #e91e63;
+            background-color: #e64a19;
             color: white;
             padding: 30px 0;
             text-align: center;
@@ -39,7 +39,7 @@
             font-size: 2.5rem;
         }
         
-        .strawberry-icon {
+        .tomato-icon {
             font-size: 3rem;
             margin-bottom: 15px;
             display: block;
@@ -54,7 +54,7 @@
         }
         
         .intro h2 {
-            color: #e91e63;
+            color: #e64a19;
             margin-top: 0;
         }
         
@@ -147,13 +147,13 @@
         }
         
         .site-card h3 {
-            color: #e91e63;
+            color: #e64a19;
             margin-top: 0;
         }
         
         .site-card a {
             display: inline-block;
-            background-color: #e91e63;
+            background-color: #e64a19;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
@@ -163,7 +163,7 @@
         }
         
         .site-card a:hover {
-            background-color: #c2185b;
+            background-color: #bf360c;
             transform: translateY(-2px);
         }
         
@@ -188,25 +188,25 @@
 <body>
     <header>
         <div class="container">
-            <span class="strawberry-icon">🍓</span>
-            <h1>Do Campo à Mesa: A Jornada do Morango </h1>
-            <p>Tudo sobre o fruto mais vermelho e suculento!</p>
+            <span class="tomato-icon">🍅</span>
+            <h1>Do Plantio à Colheita: O Cultivo do Tomate</h1>
+            <p>Tudo sobre o fruto mais versátil da horta!</p>
         </div>
     </header>
     
     <div class="container">
         <div class="intro">
-            <h2>Conheça o Morango</h2>
-            <p>O morango (Fragaria × ananassa) é uma fruta vermelha, suculenta e aromática, muito apreciada em todo o mundo. Originário da Europa, o morango moderno é resultado de cruzamentos entre espécies americanas e europeias no século XVIII.</p>
+            <h2>Conheça o Tomate</h2>
+            <p>O tomate (Solanum lycopersicum) é uma das hortaliças mais cultivadas e consumidas no mundo. Originário da América do Sul, foi domesticado no México e hoje é fundamental na culinária global.</p>
             
-            <p>Rico em vitamina C, flavonoides e antioxidantes, o morango oferece diversos benefícios à saúde, incluindo fortalecimento do sistema imunológico e ação anti-inflamatória. Além disso, é versátil na culinária, podendo ser consumido fresco, em doces, geleias, sorvetes e diversas outras preparações.</p>
+            <p>Rico em licopeno, vitaminas A e C, o tomate oferece diversos benefícios à saúde, incluindo proteção cardiovascular e ação antioxidante. Existem variedades para todos os gostos: cereja, caqui, italiano, holandês e muitos outros.</p>
             
-            <p>No Brasil, os maiores produtores estão nas regiões sul e sudeste, com destaque para Minas Gerais, Rio Grande do Sul e São Paulo. A colheita ocorre principalmente entre agosto e novembro.</p>
+            <p>No Brasil, os maiores produtores estão em Goiás, São Paulo e Minas Gerais. O cultivo pode ser feito em campo aberto ou protegido, em pequena ou grande escala.</p>
         </div>
         
         <div class="terminal">
             <div class="terminal-header">
-                <div class="terminal-title">Terminal de Navegação - Morangos</div>
+                <div class="terminal-title">Terminal de Navegação - Tomate</div>
                 <div class="terminal-controls">
                     <span class="close"></span>
                     <span class="minimize"></span>
@@ -214,16 +214,16 @@
                 </div>
             </div>
             <div class="terminal-body" id="terminal-output">
-                <div>Bem-vindo ao Terminal de Navegação sobre Morangos!</div>
+                <div>Bem-vindo ao Terminal de Navegação sobre Tomates!</div>
                 <div>Digite um dos seguintes comandos para acessar informações:</div>
                 <br>
-                <div>- <strong>cultivo</strong>: Técnicas de cultivo de morangos</div>
-                <div>- <strong>receitas</strong>: Receitas deliciosas com morango</div>
-                <div>- <strong>beneficios</strong>: Benefícios para a saúde</div>
-                <div>- <strong>variedades</strong>: Tipos de morango</div>
+                <div>- <strong>plantio</strong>: Técnicas de plantio de tomate</div>
+                <div>- <strong>pragas</strong>: Principais pragas e doenças</div>
+                <div>- <strong>solucoes</strong>: Soluções para problemas comuns</div>
+                <div>- <strong>variedades</strong>: Tipos de tomate</div>
                 <div>- <strong>limpar</strong>: Limpa o terminal</div>
                 <br>
-                <div>Exemplo: <span style="color: #69F0AE;">></span> receitas</div>
+                <div>Exemplo: <span style="color: #69F0AE;">></span> pragas</div>
             </div>
             <div class="command-line">
                 <span class="prompt">></span>
@@ -231,57 +231,91 @@
             </div>
         </div>
         
-        <div class="site-card" id="cultivo-card">
-            <h3>Técnicas de Cultivo de Morango</h3>
-            <p>Aprenda as melhores práticas para cultivar morangos em casa ou em escala comercial. O cultivo de morangos requer cuidados específicos com solo, irrigação e controle de pragas.</p>
-            <p>Os morangos preferem solos bem drenados, ricos em matéria orgânica, com pH entre 5,5 e 6,5. A exposição solar deve ser de pelo menos 6 horas diárias.</p>
-            <a href="https://isaa22.github.io/agrinhoisa/" target="_blank">Acesse a Embrapa Morango</a>
+        <div class="site-card" id="plantio-card">
+            <h3>Técnicas de Plantio do Tomate</h3>
+            <p>O tomate requer sol pleno (pelo menos 6 horas diárias) e solo bem drenado, rico em matéria orgânica, com pH entre 6,0 e 6,8. O espaçamento varia conforme a variedade:</p>
+            <ul>
+                <li>Tomate rasteiro: 50-60cm entre plantas</li>
+                <li>Tomate tutorado: 40-50cm entre plantas</li>
+                <li>Tomate cereja: 30-40cm entre plantas</li>
+            </ul>
+            <p>A irrigação deve ser regular, evitando molhar as folhas para prevenir doenças. A adubação com NPK é essencial, com ênfase em potássio durante a frutificação.</p>
+            <a href="#" target="_blank">Guia completo de plantio</a>
         </div>
         
-        <div class="site-card" id="receitas-card">
-            <h3>Receitas com Morango</h3>
-            <p>Descubra receitas incríveis para aproveitar os morangos na culinária. Desde sobremesas clássicas até pratos inovadores que combinam doce e salgado.</p>
-            <p>Algumas sugestões: torta de morango, mousse, geleia, sorvete, salada com folhas verdes, molho agridoce para carnes e drinks refrescantes.</p>
-            <a href="https://isaa22.github.io/agrinhoisa/" target="_blank">Receitas no TudoGostoso</a>
+        <div class="site-card" id="pragas-card">
+            <h3>Principais Pragas e Doenças do Tomate</h3>
+            <p><strong>Pragas mais comuns:</strong></p>
+            <ul>
+                <li>Traça-do-tomateiro (Tuta absoluta) - lagartas que perfuram folhas e frutos</li>
+                <li>Mosca-branca - suga a seiva e transmite vírus</li>
+                <li>Pulgões - sugadores de seiva que deformam folhas</li>
+                <li>Vaquinha - besouro que rói folhas</li>
+            </ul>
+            
+            <p><strong>Doenças frequentes:</strong></p>
+            <ul>
+                <li>Requeima (Phytophthora infestans) - manchas escuras em folhas e frutos</li>
+                <li>Murcha bacteriana - planta murcha rapidamente</li>
+                <li>Pinta-preta (Alternaria solani) - manchas circulares nas folhas</li>
+                <li>Oídio - pó branco nas folhas</li>
+            </ul>
+            <a href="#" target="_blank">Identificação e controle</a>
         </div>
         
-        <div class="site-card" id="beneficios-card">
-            <h3>Benefícios do Morango para a Saúde</h3>
-            <p>Os morangos são ricos em nutrientes essenciais e compostos antioxidantes que trazem diversos benefícios à saúde.</p>
-            <p>Principais benefícios: melhora a saúde cardiovascular, fortalece o sistema imunológico, ajuda no controle do açúcar no sangue, possui ação anti-inflamatória e contribui para a saúde da pele.</p>
-            <a href="https://isaa22.github.io/agrinhoisa/" target="_blank">Benefícios na Healthline</a>
+        <div class="site-card" id="solucoes-card">
+            <h3>Soluções para Problemas no Cultivo</h3>
+            <p><strong>Problema: Frutos rachados</strong><br>
+            Solução: Manter irrigação regular, evitar excesso de água próximo à colheita</p>
+            
+            <p><strong>Problema: Podridão apical (fundo preto)</strong><br>
+            Solução: Aplicar cálcio via solo ou foliar, manter pH adequado</p>
+            
+            <p><strong>Problema: Flores caindo sem frutificar</strong><br>
+            Solução: Garantir polinização (agitando plantas ou com abelhas), evitar estresse hídrico</p>
+            
+            <p><strong>Problema: Folhas amareladas</strong><br>
+            Solução: Verificar deficiências nutricionais (especialmente nitrogênio), excesso de água ou doenças</p>
+            
+            <p><strong>Problema: Plantas murchas</strong><br>
+            Solução: Inspecionar por doenças vasculares, nematoides ou falta de água</p>
+            <a href="#" target="_blank">Mais soluções</a>
         </div>
         
         <div class="site-card" id="variedades-card">
-            <h3>Variedades de Morango</h3>
-            <p>Existem diversas variedades de morango, cada uma com características específicas de sabor, tamanho, cor e resistência.</p>
-            <p>Algumas variedades populares: Albion (doce e firme), Camarosa (grande e vermelho intenso), Festival (sabor equilibrado), Oso Grande (muito grande), San Andreas (longa vida útil).</p>
-            <a href="https://isaa22.github.io/agrinhoisa/" target="_blank">Variedades no Radar Agrícola</a>
+            <h3>Variedades de Tomate</h3>
+            <p><strong>Tomate Caqui:</strong> Tradicional, grande, para saladas e molhos</p>
+            <p><strong>Tomate Italiano:</strong> Alongado, carnudo, pouco água, ideal para molhos</p>
+            <p><strong>Tomate Cereja:</strong> Pequeno, doce, perfeito para saladas e aperitivos</p>
+            <p><strong>Tomate Holandês:</strong> Firme, pouco ácido, ótimo para sanduíches</p>
+            <p><strong>Tomate Débora:</strong> Resistente a doenças, boa produtividade</p>
+            <p><strong>Tomate Santa Cruz:</strong> Tradicional brasileiro, sabor acentuado</p>
+            <a href="#" target="_blank">Catálogo completo</a>
         </div>
     </div>
     
     <footer>
-        <p>© 2025 Do Campo à Mesa: A Jornada do Morango | Todos os direitos reservados à Isa22 & professor-rafael</p>
+        <p>© 2023 Do Plantio à Colheita: O Cultivo do Tomate | Todos os direitos reservados</p>
     </footer>
 
     <script>
         // Comandos disponíveis
         const commands = {
-            'cultivo': {
-                card: 'cultivo-card',
-                message: 'Abrindo informações sobre cultivo de morangos...'
+            'plantio': {
+                card: 'plantio-card',
+                message: 'Abrindo informações sobre plantio de tomate...'
             },
-            'receitas': {
-                card: 'receitas-card',
-                message: 'Carregando receitas deliciosas com morango...'
+            'pragas': {
+                card: 'pragas-card',
+                message: 'Carregando informações sobre pragas e doenças...'
             },
-            'beneficios': {
-                card: 'beneficios-card',
-                message: 'Mostrando benefícios do morango para saúde...'
+            'solucoes': {
+                card: 'solucoes-card',
+                message: 'Mostrando soluções para problemas comuns...'
             },
             'variedades': {
                 card: 'variedades-card',
-                message: 'Exibindo diferentes variedades de morango...'
+                message: 'Exibindo diferentes variedades de tomate...'
             },
             'limpar': {
                 action: function() {
@@ -292,10 +326,10 @@
             'ajuda': {
                 action: function() {
                     addTerminalOutput('<div>Comandos disponíveis:</div>');
-                    addTerminalOutput('<div>- cultivo: Técnicas de cultivo</div>');
-                    addTerminalOutput('<div>- receitas: Receitas com morango</div>');
-                    addTerminalOutput('<div>- beneficios: Benefícios para saúde</div>');
-                    addTerminalOutput('<div>- variedades: Tipos de morango</div>');
+                    addTerminalOutput('<div>- plantio: Técnicas de plantio</div>');
+                    addTerminalOutput('<div>- pragas: Pragas e doenças</div>');
+                    addTerminalOutput('<div>- solucoes: Soluções para problemas</div>');
+                    addTerminalOutput('<div>- variedades: Tipos de tomate</div>');
                     addTerminalOutput('<div>- limpar: Limpa o terminal</div>');
                 }
             }
