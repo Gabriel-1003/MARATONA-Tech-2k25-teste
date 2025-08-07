@@ -10,41 +10,41 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
-
+        
         body {
-            background-color: #fce4ec;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
             color: #333;
             line-height: 1.6;
         }
-
+        
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
-
+        
         header {
-            background-color: #e91e63;
+            background-color: #dc3545;
             color: white;
             padding: 30px 0;
             text-align: center;
             border-radius: 0 0 20px 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
+        
         h1 {
             margin: 0;
             font-size: 2.5rem;
         }
-
+        
         .tomato-icon {
             font-size: 3rem;
             margin-bottom: 15px;
             display: block;
         }
-
+        
         .intro {
             background-color: white;
             padding: 25px;
@@ -52,12 +52,12 @@
             margin: 30px 0;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
+        
         .intro h2 {
-            color: #e91e63;
+            color: #dc3545;
             margin-top: 0;
         }
-
+        
         .terminal {
             background-color: #263238;
             color: #ECEFF1;
@@ -67,7 +67,7 @@
             margin: 30px 0;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         }
-
+        
         .terminal-header {
             display: flex;
             justify-content: space-between;
@@ -75,12 +75,12 @@
             padding-bottom: 10px;
             border-bottom: 1px solid #37474F;
         }
-
+        
         .terminal-title {
             font-weight: bold;
             color: #FF7043;
         }
-
+        
         .terminal-controls span {
             display: inline-block;
             width: 12px;
@@ -88,35 +88,35 @@
             border-radius: 50%;
             margin-left: 5px;
         }
-
+        
         .close {
             background-color: #FF5252;
         }
-
+        
         .minimize {
             background-color: #FFD740;
         }
-
+        
         .maximize {
             background-color: #69F0AE;
         }
-
+        
         .terminal-body {
             min-height: 200px;
             max-height: 400px;
             overflow-y: auto;
         }
-
+        
         .command-line {
             display: flex;
             margin-top: 10px;
         }
-
+        
         .prompt {
             color: #69F0AE;
             margin-right: 10px;
         }
-
+        
         #command-input {
             background: transparent;
             border: none;
@@ -126,7 +126,7 @@
             outline: none;
             font-size: 1rem;
         }
-
+        
         .site-card {
             background-color: white;
             border-radius: 10px;
@@ -135,42 +135,25 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             display: none;
         }
-
+        
         .site-card.active {
             display: block;
             animation: fadeIn 0.5s;
         }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin: 20px 0;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-        }
-
+        
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-
+        
         .site-card h3 {
-            color: #e91e63;
+            color: #dc3545;
             margin-top: 0;
         }
-
+        
         .site-card a {
             display: inline-block;
-            background-color: #e91e63;
+            background-color: #dc3545;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
@@ -178,24 +161,24 @@
             margin-top: 10px;
             transition: all 0.3s;
         }
-
+        
         .site-card a:hover {
-            background-color: #c2185b;
+            background-color: #c82333;
             transform: translateY(-2px);
         }
-
+        
         footer {
             text-align: center;
             margin-top: 40px;
             padding: 20px;
             color: #666;
         }
-
+        
         @media (max-width: 600px) {
             h1 {
                 font-size: 2rem;
             }
-
+            
             .terminal {
                 padding: 15px;
             }
@@ -207,23 +190,23 @@
         <div class="container">
             <span class="tomato-icon">🍅</span>
             <h1>Do Plantio à Colheita: O Cultivo do Tomate</h1>
-            <p>Soluções para os problemas mais comuns no cultivo de tomates</p>
+            <p>Tudo sobre o cultivo dessa hortaliça versátil e nutritiva!</p>
         </div>
     </header>
-
+    
     <div class="container">
         <div class="intro">
             <h2>Conheça o Tomate</h2>
-            <p>O tomate (Solanum lycopersicum) é uma das hortaliças mais cultivadas no mundo, originária da América do Sul. Rico em licopeno, vitaminas A e C, o tomate é fundamental na culinária e traz diversos benefícios à saúde.</p>
-
-            <p>No Brasil, o cultivo de tomate enfrenta diversos desafios, desde pragas e doenças até problemas fisiológicos. O sucesso da produção depende do manejo adequado, escolha de variedades resistentes e técnicas de cultivo específicas.</p>
-
-            <p>Os principais estados produtores são Goiás, São Paulo e Minas Gerais, com sistemas de cultivo que variam desde pequenas hortas familiares até grandes produções em estufas.</p>
+            <p>O tomate (Solanum lycopersicum) é uma das hortaliças mais cultivadas e consumidas no mundo. Originário da América do Sul, o tomate foi domesticado no México e hoje é fundamental na culinária global.</p>
+            
+            <p>Rico em licopeno, vitaminas A, C e K, além de minerais como potássio, o tomate oferece diversos benefícios à saúde, incluindo proteção cardiovascular, ação antioxidante e fortalecimento do sistema imunológico.</p>
+            
+            <p>No Brasil, o cultivo de tomate ocorre em todas as regiões, com destaque para Goiás, São Paulo e Minas Gerais. Existem variedades para consumo in natura (salada) e para industrialização (molhos, extratos).</p>
         </div>
-
+        
         <div class="terminal">
             <div class="terminal-header">
-                <div class="terminal-title">Terminal de Navegação - Tomates</div>
+                <div class="terminal-title">Terminal de Navegação - Tomate</div>
                 <div class="terminal-controls">
                     <span class="close"></span>
                     <span class="minimize"></span>
@@ -231,188 +214,136 @@
                 </div>
             </div>
             <div class="terminal-body" id="terminal-output">
-                <div>Bem-vindo ao Terminal de Navegação sobre Cultivo de Tomates!</div>
+                <div>Bem-vindo ao Terminal de Navegação sobre Cultivo de Tomate!</div>
                 <div>Digite um dos seguintes comandos para acessar informações:</div>
                 <br>
-                <div>- <strong>cultivo</strong>: Técnicas de cultivo de tomates</div>
-                <div>- <strong>pragas</strong>: Pragas comuns e soluções</div>
-                <div>- <strong>doencas</strong>: Doenças e tratamentos</div>
-                <div>- <strong>variedades</strong>: Tipos de tomate e resistências</div>
-                <div>- <strong>receitas</strong>: Vídeos de receitas com tomate</div>
-                <div>- <strong>duvidas</strong>: Vídeos para tirar dúvidas comuns</div>
-                <div>- <strong>fertilizacao</strong>: Como fertilizar corretamente</div>
-                <div>- <strong>podas</strong>: Técnicas de poda do tomateiro</div>
-                <div>- <strong>hidroponia</strong>: Cultivo hidropônico de tomate</div>
+                <div>- <strong>plantio</strong>: Técnicas de plantio de tomate</div>
+                <div>- <strong>variedades</strong>: Principais variedades de tomate</div>
+                <div>- <strong>doencas</strong>: Doenças e pragas do tomateiro</div>
+                <div>- <strong>colheita</strong>: Técnicas de colheita e pós-colheita</div>
                 <div>- <strong>limpar</strong>: Limpa o terminal</div>
-                <div>- <strong>ajuda</strong>: Mostra todos os comandos</div>
                 <br>
-                <div>Exemplo: <span style="color: #69F0AE;">></span> pragas</div>
+                <div>Exemplo: <span style="color: #69F0AE;">></span> plantio</div>
             </div>
             <div class="command-line">
                 <span class="prompt">></span>
                 <input type="text" id="command-input" placeholder="Digite um comando e pressione Enter">
             </div>
         </div>
-
-        <div class="site-card" id="cultivo-card">
-            <h3>Técnicas de Cultivo do Tomate</h3>
-            <p>O cultivo de tomates requer sol pleno (pelo menos 6 horas diárias), solo bem drenado e rico em matéria orgânica, com pH entre 6,0 e 6,8. O espaçamento ideal varia conforme o sistema de condução:</p>
-            <ul>
-                <li>Espaldeira: 50cm entre plantas e 1m entre linhas</li>
-                <li>Tutoramento vertical: 40cm entre plantas</li>
-                <li>Plantio rasteiro: 80cm entre plantas e 1,5m entre linhas</li>
-            </ul>
-            <p>A irrigação deve ser regular, evitando molhar as folhas para prevenir doenças. A adubação deve ser equilibrada, com atenção especial ao cálcio para evitar podridão apical.</p>
-            
-            <h4>Vídeos sobre Cultivo:</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5x7Gx5vCQJ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2hW9HZx_1kY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <a href="https://www.embrapa.br/hortalicas/tomate-de-mesa" target="_blank">Guia Completo de Cultivo</a>
+        
+        <div class="site-card" id="plantio-card">
+            <h3>Técnicas de Plantio de Tomate</h3>
+            <p>O cultivo do tomate requer cuidados específicos com solo, irrigação e adubação para obter bons resultados. O tomateiro prefere solos bem drenados, ricos em matéria orgânica, com pH entre 5,5 e 6,8.</p>
+            <p>O plantio pode ser feito por sementes ou mudas, com espaçamento variando conforme a variedade. A irrigação por gotejamento é a mais indicada, evitando molhar as folhas para prevenir doenças.</p>
+            <a href="#" target="_blank">Guia completo de plantio</a>
         </div>
-
-        <div class="site-card" id="pragas-card">
-            <h3>Pragas Comuns no Tomateiro e Soluções</h3>
-            <p><strong>1. Mosca-branca:</strong> Transmite vírus e suga a seiva. Solução: uso de armadilhas amarelas com cola, inseticidas naturais (óleo de neem) e controle biológico com Encarsia formosa.</p>
-            <p><strong>2. Broca-pequena-do-fruto:</strong> Larvas penetram nos frutos. Solução: monitoramento com feromônios, eliminação de frutos atacados e aplicação de Bacillus thuringiensis.</p>
-            <p><strong>3. Ácaros:</strong> Causam bronzeamento das folhas. Solução: aumentar umidade, uso de acaricidas seletivos e controle com ácaros predadores.</p>
-            <p><strong>4. Vaquinha:</strong> Consome folhas. Solução: catação manual em pequenas áreas, uso de cobertura morta e inseticidas piretroides.</p>
-            
-            <h4>Vídeos sobre Controle de Pragas:</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8J3UfXaZQeE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4Wj2Y4y1x7M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <a href="https://www.agencia.cnptia.embrapa.br/gestor/tomate/arvore/CONT000fzpeq1f402wyiv80ok8k0wbsws0u9.html" target="_blank">Manual de Controle de Pragas</a>
-        </div>
-
-        <div class="site-card" id="doencas-card">
-            <h3>Doenças do Tomateiro e Tratamentos</h3>
-            <p><strong>1. Requeima (Phytophthora infestans):</strong> Manchas escuras nas folhas e frutos. Solução: evitar molhar folhas, aplicar fungicidas cúpricos preventivos e usar variedades resistentes.</p>
-            <p><strong>2. Murcha bacteriana:</strong> Murcha repentina da planta. Solução: rotação de culturas, eliminar plantas doentes e desinfetar ferramentas.</p>
-            <p><strong>3. Oídio:</strong> Pó branco nas folhas. Solução: enxofre micronizado, óleo de neem e melhorar ventilação.</p>
-            <p><strong>4. Podridão apical:</strong> Mancha escura na ponta do fruto. Solução: manter rega constante, aplicar cálcio via foliar e evitar excesso de nitrogênio.</p>
-            
-            <h4>Vídeos sobre Doenças:</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7Q6X9Y3JZ1o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3vJ9VZ4jX6U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <a href="https://ainfo.cnptia.embrapa.br/digital/bitstream/item/210980/1/Circ-138.pdf" target="_blank">Guia de Doenças do Tomate</a>
-        </div>
-
+        
         <div class="site-card" id="variedades-card">
-            <h3>Variedades de Tomate e Resistências</h3>
-            <p><strong>1. Santa Cruz:</strong> Tradicional, frutos médios. Resistente à murcha bacteriana.</p>
-            <p><strong>2. Débora Plus:</strong> Frutos firmes, boa produtividade. Tolerante a TYLCV (vírus do enrolamento da folha).</p>
-            <p><strong>3. Carmem:</strong> Tomate alongado, para indústria. Resistente a nematoides.</p>
-            <p><strong>4. Sweet Grape:</strong> Tomate cereja, muito doce. Resistente a fusarium e verticillium.</p>
-            <p><strong>5. Italiano:</strong> Formato alongado, polpa densa. Tolerante a requeima.</p>
-            
-            <h4>Vídeos sobre Variedades:</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9X8Z7v5Q3v4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/m6JcV1W5p7E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <a href="https://www.embrapa.br/hortalicas/tomate-de-mesa/cultivares" target="_blank">Catálogo de Variedades</a>
+            <h3>Variedades de Tomate</h3>
+            <p>Existem centenas de variedades de tomate, classificadas principalmente por tipo de crescimento (determinado ou indeterminado) e finalidade (mesa ou indústria).</p>
+            <p>Principais variedades: Santa Cruz (tradicional), Italiano (alongado), Cereja (pequeno e doce), Caqui (carne firme), Débora (híbrido produtivo), Sweet Grape (mini tomate alongado).</p>
+            <a href="#" target="_blank">Catálogo de variedades</a>
         </div>
-
-        <div class="site-card" id="receitas-card">
-            <h3>Receitas Deliciosas com Tomate</h3>
-            <p>Aprenda a preparar pratos incríveis com tomate:</p>
-            
-            <h4>Molho de Tomate Caseiro</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4v9MCi8dYb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <h4>Tomate Recheado com Atum</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6X2BvZJzJ1E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <h4>Salada Caprese</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7V_6bpcX3v4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <h4>Sopa de Tomate</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0qKZ4z5VQ7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <a href="https://www.youtube.com/results?search_query=receitas+com+tomate" target="_blank">Mais receitas com tomate</a>
+        
+        <div class="site-card" id="doencas-card">
+            <h3>Doenças e Pragas do Tomateiro</h3>
+            <p>O tomateiro está sujeito a diversas doenças e pragas que podem comprometer a produção se não forem controladas adequadamente.</p>
+            <p>Principais problemas: requeima (Phytophthora infestans), murcha bacteriana, vaquinha, traça-do-tomateiro, mosca-branca e nematoides. O controle integrado com práticas culturais, biológicas e químicas é o mais recomendado.</p>
+            <a href="#" target="_blank">Manual de fitossanidade</a>
         </div>
-
-        <div class="site-card" id="duvidas-card">
-            <h3>Vídeos para Tirar Dúvidas sobre Cultivo de Tomate</h3>
-            <p>Assista a esses vídeos para esclarecer suas principais dúvidas sobre o cultivo de tomates:</p>
-            
-            <h4>Dúvidas Comuns sobre Tomateiros</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1QY4XQ9W3e4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <h4>Perguntas e Respostas sobre Tomates</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5X7Gx5vCQJ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <h4>Solução para Problemas no Tomateiro</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8J3UfXaZQeE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <h4>Dicas de Especialistas</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3vJ9VZ4jX6U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <a href="https://www.youtube.com/results?search_query=duvidas+cultivo+tomate" target="_blank">Mais vídeos para tirar dúvidas</a>
+        
+        <div class="site-card" id="colheita-card">
+            <h3>Colheita e Pós-Colheita do Tomate</h3>
+            <p>A colheita do tomate varia conforme a variedade e destino (consumo fresco ou industrial). Tomates para mesa são colhidos no estágio "firme-vermelho", enquanto para indústria podem ser colhidos mais maduros.</p>
+            <p>O manuseio pós-colheita é crucial para manter a qualidade. Evitar machucados, armazenar em local fresco (12-15°C) e não refrigerar tomates para consumo fresco (perdem sabor e textura).</p>
+            <a href="#" target="_blank">Técnicas de pós-colheita</a>
         </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Do Plantio à Colheita: O Cultivo do Tomate | Todos os direitos reservados</p>
+    </footer>
 
-        <div class="site-card" id="fertilizacao-card">
-            <h3>Fertilização do Tomateiro</h3>
-            <p>A adubação do tomateiro deve ser equilibrada, com atenção especial às necessidades em cada fase de desenvolvimento:</p>
-            
-            <p><strong>1. Pré-plantio:</strong> Incorporar 3-4 kg/m² de esterco curtido + 100g/m² de farinha de ossos.</p>
-            <p><strong>2. Plantio:</strong> Aplicar 10g de NPK 4-14-8 por cova, misturado ao solo.</p>
-            <p><strong>3. Crescimento vegetativo (20-30 dias):</strong> Aplicar NPK 20-10-10 a cada 15 dias.</p>
-            <p><strong>4. Floração e frutificação:</strong> Trocar para NPK 10-10-20, com aplicações semanais de cálcio via foliar.</p>
-            
-            <h4>Vídeos sobre Fertilização:</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9X8Z7v5Q3v4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/m6JcV1W5p7E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <a href="https://www.embrapa.br/hortalicas/tomate-de-mesa/adubacao" target="_blank">Guia Completo de Fertilização</a>
-        </div>
+    <script>
+        // Comandos disponíveis
+        const commands = {
+            'plantio': {
+                card: 'plantio-card',
+                message: 'Abrindo informações sobre técnicas de plantio de tomate...'
+            },
+            'variedades': {
+                card: 'variedades-card',
+                message: 'Carregando informações sobre variedades de tomate...'
+            },
+            'doencas': {
+                card: 'doencas-card',
+                message: 'Mostrando doenças e pragas do tomateiro...'
+            },
+            'colheita': {
+                card: 'colheita-card',
+                message: 'Exibindo técnicas de colheita e pós-colheita...'
+            },
+            'limpar': {
+                action: function() {
+                    document.getElementById('terminal-output').innerHTML = '';
+                    addTerminalOutput('Terminal limpo. Digite um comando para continuar.');
+                }
+            },
+            'ajuda': {
+                action: function() {
+                    addTerminalOutput('<div>Comandos disponíveis:</div>');
+                    addTerminalOutput('<div>- plantio: Técnicas de plantio</div>');
+                    addTerminalOutput('<div>- variedades: Tipos de tomate</div>');
+                    addTerminalOutput('<div>- doencas: Doenças e pragas</div>');
+                    addTerminalOutput('<div>- colheita: Colheita e pós-colheita</div>');
+                    addTerminalOutput('<div>- limpar: Limpa o terminal</div>');
+                }
+            }
+        };
 
-        <div class="site-card" id="podas-card">
-            <h3>Técnicas de Poda do Tomateiro</h3>
-            <p>A poda é essencial para aumentar a produtividade e qualidade dos frutos:</p>
-            
-            <p><strong>1. Poda de formação:</strong> Manter apenas 1-2 hastes principais, eliminando brotações laterais (filhos).</p>
-            <p><strong>2. Desbrota:</strong> Remover brotos que surgem nas axilas das folhas, preferencialmente quando têm 2-3 cm.</p>
-            <p><strong>3. Poda de folhas:</strong> Remover folhas velhas e doentes, principalmente as próximas ao solo.</p>
-            <p><strong>4. Poda de frutos:</strong> Em variedades grandes, limitar a 4-5 frutos por cacho.</p>
-            
-            <h4>Vídeos sobre Poda:</h4>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2h
+        // Configurar o input de comando
+        const commandInput = document.getElementById('command-input');
+        commandInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const command = this.value.toLowerCase().trim();
+                this.value = '';
+                
+                addTerminalOutput(`<div><span style="color: #69F0AE;">></span> ${command}</div>`);
+                
+                if (commands[command]) {
+                    if (commands[command].card) {
+                        // Esconder todos os cards primeiro
+                        document.querySelectorAll('.site-card').forEach(card => {
+                            card.classList.remove('active');
+                        });
+                        
+                        // Mostrar mensagem no terminal
+                        addTerminalOutput(commands[command].message);
+                        
+                        // Mostrar o card correspondente
+                        document.getElementById(commands[command].card).classList.add('active');
+                    } else if (commands[command].action) {
+                        commands[command].action();
+                    }
+                } else {
+                    addTerminalOutput(`Comando não reconhecido: "${command}". Digite "ajuda" para ver os comandos disponíveis.`);
+                }
+            }
+        });
+
+        // Função para adicionar texto ao terminal
+        function addTerminalOutput(text) {
+            const terminalOutput = document.getElementById('terminal-output');
+            const newElement = document.createElement('div');
+            newElement.innerHTML = text;
+            terminalOutput.appendChild(newElement);
+            terminalOutput.scrollTop = terminalOutput.scrollHeight;
+        }
+
+        // Focar no input quando a página carregar
+        window.onload = function() {
+            commandInput.focus();
+        };
+    </script>
+</body>
+</html>
