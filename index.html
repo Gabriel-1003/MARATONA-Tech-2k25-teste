@@ -10,7 +10,7 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
-        
+
         body {
             background-color: #fce4ec;
             margin: 0;
@@ -18,13 +18,13 @@
             color: #333;
             line-height: 1.6;
         }
-        
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             background-color: #e91e63;
             color: white;
@@ -33,18 +33,18 @@
             border-radius: 0 0 20px 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        
+
         h1 {
             margin: 0;
             font-size: 2.5rem;
         }
-        
+
         .tomato-icon {
             font-size: 3rem;
             margin-bottom: 15px;
             display: block;
         }
-        
+
         .intro {
             background-color: white;
             padding: 25px;
@@ -52,12 +52,12 @@
             margin: 30px 0;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        
+
         .intro h2 {
             color: #e91e63;
             margin-top: 0;
         }
-        
+
         .terminal {
             background-color: #263238;
             color: #ECEFF1;
@@ -67,7 +67,7 @@
             margin: 30px 0;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         }
-        
+
         .terminal-header {
             display: flex;
             justify-content: space-between;
@@ -75,12 +75,12 @@
             padding-bottom: 10px;
             border-bottom: 1px solid #37474F;
         }
-        
+
         .terminal-title {
             font-weight: bold;
             color: #FF7043;
         }
-        
+
         .terminal-controls span {
             display: inline-block;
             width: 12px;
@@ -88,35 +88,35 @@
             border-radius: 50%;
             margin-left: 5px;
         }
-        
+
         .close {
             background-color: #FF5252;
         }
-        
+
         .minimize {
             background-color: #FFD740;
         }
-        
+
         .maximize {
             background-color: #69F0AE;
         }
-        
+
         .terminal-body {
             min-height: 200px;
             max-height: 400px;
             overflow-y: auto;
         }
-        
+
         .command-line {
             display: flex;
             margin-top: 10px;
         }
-        
+
         .prompt {
             color: #69F0AE;
             margin-right: 10px;
         }
-        
+
         #command-input {
             background: transparent;
             border: none;
@@ -126,7 +126,7 @@
             outline: none;
             font-size: 1rem;
         }
-        
+
         .site-card {
             background-color: white;
             border-radius: 10px;
@@ -135,22 +135,39 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             display: none;
         }
-        
+
         .site-card.active {
             display: block;
             animation: fadeIn 0.5s;
         }
-        
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        
+
         .site-card h3 {
             color: #e91e63;
             margin-top: 0;
         }
-        
+
         .site-card a {
             display: inline-block;
             background-color: #e91e63;
@@ -161,24 +178,24 @@
             margin-top: 10px;
             transition: all 0.3s;
         }
-        
+
         .site-card a:hover {
             background-color: #c2185b;
             transform: translateY(-2px);
         }
-        
+
         footer {
             text-align: center;
             margin-top: 40px;
             padding: 20px;
             color: #666;
         }
-        
+
         @media (max-width: 600px) {
             h1 {
                 font-size: 2rem;
             }
-            
+
             .terminal {
                 padding: 15px;
             }
@@ -193,17 +210,17 @@
             <p>Soluções para os problemas mais comuns no cultivo de tomates</p>
         </div>
     </header>
-    
+
     <div class="container">
         <div class="intro">
             <h2>Conheça o Tomate</h2>
             <p>O tomate (Solanum lycopersicum) é uma das hortaliças mais cultivadas no mundo, originária da América do Sul. Rico em licopeno, vitaminas A e C, o tomate é fundamental na culinária e traz diversos benefícios à saúde.</p>
-            
+
             <p>No Brasil, o cultivo de tomate enfrenta diversos desafios, desde pragas e doenças até problemas fisiológicos. O sucesso da produção depende do manejo adequado, escolha de variedades resistentes e técnicas de cultivo específicas.</p>
-            
+
             <p>Os principais estados produtores são Goiás, São Paulo e Minas Gerais, com sistemas de cultivo que variam desde pequenas hortas familiares até grandes produções em estufas.</p>
         </div>
-        
+
         <div class="terminal">
             <div class="terminal-header">
                 <div class="terminal-title">Terminal de Navegação - Tomates</div>
@@ -221,6 +238,7 @@
                 <div>- <strong>pragas</strong>: Pragas comuns e soluções</div>
                 <div>- <strong>doencas</strong>: Doenças e tratamentos</div>
                 <div>- <strong>variedades</strong>: Tipos de tomate e resistências</div>
+                <div>- <strong>receitas</strong>: Vídeos de receitas com tomate</div>
                 <div>- <strong>limpar</strong>: Limpa o terminal</div>
                 <br>
                 <div>Exemplo: <span style="color: #69F0AE;">></span> pragas</div>
@@ -230,7 +248,7 @@
                 <input type="text" id="command-input" placeholder="Digite um comando e pressione Enter">
             </div>
         </div>
-        
+
         <div class="site-card" id="cultivo-card">
             <h3>Técnicas de Cultivo do Tomate</h3>
             <p>O cultivo de tomates requer sol pleno (pelo menos 6 horas diárias), solo bem drenado e rico em matéria orgânica, com pH entre 6,0 e 6,8. O espaçamento ideal varia conforme o sistema de condução:</p>
@@ -240,27 +258,27 @@
                 <li>Plantio rasteiro: 80cm entre plantas e 1,5m entre linhas</li>
             </ul>
             <p>A irrigação deve ser regular, evitando molhar as folhas para prevenir doenças. A adubação deve ser equilibrada, com atenção especial ao cálcio para evitar podridão apical.</p>
-            <a href="#" target="_blank">Guia Completo de Cultivo</a>
+            <a href="https://www.embrapa.br/hortalicas/tomate-de-mesa" target="_blank">Guia Completo de Cultivo</a>
         </div>
-        
+
         <div class="site-card" id="pragas-card">
             <h3>Pragas Comuns no Tomateiro e Soluções</h3>
             <p><strong>1. Mosca-branca:</strong> Transmite vírus e suga a seiva. Solução: uso de armadilhas amarelas com cola, inseticidas naturais (óleo de neem) e controle biológico com Encarsia formosa.</p>
             <p><strong>2. Broca-pequena-do-fruto:</strong> Larvas penetram nos frutos. Solução: monitoramento com feromônios, eliminação de frutos atacados e aplicação de Bacillus thuringiensis.</p>
             <p><strong>3. Ácaros:</strong> Causam bronzeamento das folhas. Solução: aumentar umidade, uso de acaricidas seletivos e controle com ácaros predadores.</p>
             <p><strong>4. Vaquinha:</strong> Consome folhas. Solução: catação manual em pequenas áreas, uso de cobertura morta e inseticidas piretroides.</p>
-            <a href="#" target="_blank">Manual de Controle de Pragas</a>
+            <a href="https://www.agencia.cnptia.embrapa.br/gestor/tomate/arvore/CONT000fzpeq1f402wyiv80ok8k0wbsws0u9.html" target="_blank">Manual de Controle de Pragas</a>
         </div>
-        
+
         <div class="site-card" id="doencas-card">
             <h3>Doenças do Tomateiro e Tratamentos</h3>
             <p><strong>1. Requeima (Phytophthora infestans):</strong> Manchas escuras nas folhas e frutos. Solução: evitar molhar folhas, aplicar fungicidas cúpricos preventivos e usar variedades resistentes.</p>
             <p><strong>2. Murcha bacteriana:</strong> Murcha repentina da planta. Solução: rotação de culturas, eliminar plantas doentes e desinfetar ferramentas.</p>
             <p><strong>3. Oídio:</strong> Pó branco nas folhas. Solução: enxofre micronizado, óleo de neem e melhorar ventilação.</p>
             <p><strong>4. Podridão apical:</strong> Mancha escura na ponta do fruto. Solução: manter rega constante, aplicar cálcio via foliar e evitar excesso de nitrogênio.</p>
-            <a href="#" target="_blank">Guia de Doenças do Tomate</a>
+            <a href="https://ainfo.cnptia.embrapa.br/digital/bitstream/item/210980/1/Circ-138.pdf" target="_blank">Guia de Doenças do Tomate</a>
         </div>
-        
+
         <div class="site-card" id="variedades-card">
             <h3>Variedades de Tomate e Resistências</h3>
             <p><strong>1. Santa Cruz:</strong> Tradicional, frutos médios. Resistente à murcha bacteriana.</p>
@@ -268,12 +286,39 @@
             <p><strong>3. Carmem:</strong> Tomate alongado, para indústria. Resistente a nematoides.</p>
             <p><strong>4. Sweet Grape:</strong> Tomate cereja, muito doce. Resistente a fusarium e verticillium.</p>
             <p><strong>5. Italiano:</strong> Formato alongado, polpa densa. Tolerante a requeima.</p>
-            <a href="#" target="_blank">Catálogo de Variedades</a>
+            <a href="https://www.embrapa.br/hortalicas/tomate-de-mesa/cultivares" target="_blank">Catálogo de Variedades</a>
+        </div>
+
+        <div class="site-card" id="receitas-card">
+            <h3>Receitas Deliciosas com Tomate</h3>
+            <p>Aprenda a preparar pratos incríveis com tomate:</p>
+            
+            <h4>Molho de Tomate Caseiro</h4>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4v9MCi8dYb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <h4>Tomate Recheado com Atum</h4>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6X2BvZJzJ1E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <h4>Salada Caprese</h4>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7V_6bpcX3v4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <h4>Sopa de Tomate</h4>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0qKZ4z5VQ7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <a href="https://www.youtube.com/results?search_query=receitas+com+tomate" target="_blank">Mais receitas com tomate</a>
         </div>
     </div>
-    
+
     <footer>
-        <p>© 2025 Do Plantio à Colheita: O Cultivo do Tomate | Todos os direitos reservados</p>
+        <p>© 2023 Do Plantio à Colheita: O Cultivo do Tomate | Todos os direitos reservados</p>
     </footer>
 
     <script>
@@ -295,6 +340,10 @@
                 card: 'variedades-card',
                 message: 'Exibindo variedades de tomate e resistências...'
             },
+            'receitas': {
+                card: 'receitas-card',
+                message: 'Carregando vídeos de receitas com tomate...'
+            },
             'limpar': {
                 action: function() {
                     document.getElementById('terminal-output').innerHTML = '';
@@ -308,6 +357,7 @@
                     addTerminalOutput('<div>- pragas: Pragas e soluções</div>');
                     addTerminalOutput('<div>- doencas: Doenças e tratamentos</div>');
                     addTerminalOutput('<div>- variedades: Tipos de tomate</div>');
+                    addTerminalOutput('<div>- receitas: Receitas com tomate</div>');
                     addTerminalOutput('<div>- limpar: Limpa o terminal</div>');
                 }
             }
@@ -319,19 +369,19 @@
             if (e.key === 'Enter') {
                 const command = this.value.toLowerCase().trim();
                 this.value = '';
-                
+
                 addTerminalOutput(`<div><span style="color: #69F0AE;">></span> ${command}</div>`);
-                
+
                 if (commands[command]) {
                     if (commands[command].card) {
                         // Esconder todos os cards primeiro
                         document.querySelectorAll('.site-card').forEach(card => {
                             card.classList.remove('active');
                         });
-                        
+
                         // Mostrar mensagem no terminal
                         addTerminalOutput(commands[command].message);
-                        
+
                         // Mostrar o card correspondente
                         document.getElementById(commands[command].card).classList.add('active');
                     } else if (commands[command].action) {
